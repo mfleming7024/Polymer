@@ -1,0 +1,21 @@
+{
+  "name": "material-testing",
+  "version": "0.1",
+  "authors": [
+    "Michael Fleming <michael.fleming@accesso.com>"
+  ],
+  "description": "Personal site scaffolding with material design",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "paper-elements": "Polymer/paper-elements#~0.5.2",
+    "less": "~2.2.0",
+    "core-animated-pages": "Polymer/core-animated-pages#~0.5.2"
+  }
+}

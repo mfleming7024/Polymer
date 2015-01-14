@@ -1,0 +1,78 @@
+@import "reset.less";
+
+//Default is Blue
+@main: #3498db;
+@accent: lighten(@main, 20%);
+
+@white: #ffffff;
+@gray: #DCDCDC;
+
+body {
+	font-family: "RobotoDraft";
+	background-color: @gray;
+}
+
+core-toolbar {
+	background-color: @main;
+	color: @white;
+}
+
+paper-tabs {
+	background-color: darken(@main, 8%);
+	paper-tab {
+		color: @white;
+	}
+}
+
+core-animated-pages {
+	height: 100%;
+}
+
+div.page-container {
+	height: auto;
+	padding-top: 15px;
+	background-color: @gray;
+	.panel {
+		width: 31.33333%;
+		margin: 0 1%;
+		max-width: 340px;
+		text-align: center;
+		background-color: @white;
+		img {
+			margin: 0 auto;
+			width: 100%;
+		}
+		div {
+			text-align: left;
+			padding: 24px;
+		}
+		@media (max-width: 640px) {
+			width: 86%;
+			margin: 0 auto;	
+			margin-bottom: 25px;
+		}
+	}
+	@media (min-width: 1090px) {
+		width: 1090px;
+		margin: 0 auto;
+	}
+}
+
+//	&.drawer-nav {
+//		background-color: green;
+//		core-toolbar {
+//			background-color: darken(@main, 15%);
+//			color: @white;
+//			background-image: url("http://i.imgur.com/wt4NRqA.jpg");
+//			background-size: cover;
+//		}
+//		div.drawer-items {
+//			paper-item {
+//				background-color: @white;
+//				border-bottom: 1px solid @gray;
+//				&::shadow paper-ripple {
+//					color: @main;
+//				}
+//			}
+//		}
+//	}
